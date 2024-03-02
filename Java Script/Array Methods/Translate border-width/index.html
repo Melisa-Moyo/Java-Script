@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array Methods</title>
+    <script src="/index.js"></script>
+    <script src="https://en.js.cx/test/libs.js"></script>
+</head>
+<body>
+    
+    <script>
+     function camelize(str) {
+            return str
+                .split('-')
+                .map((word, index) => index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1))
+                .join('');
+        } 
+    </script>
+</body>
+</html>
